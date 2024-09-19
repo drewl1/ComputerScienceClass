@@ -5,7 +5,7 @@ public class HiLoGUI extends JFrame {
     private int secret;
     private final JTextField guessBox;
     private final JLabel resultLbl;
-    private final JLabel attmptLbl;
+    private final JLabel attemptLbl;
     int attempts = 0;
 
     public HiLoGUI() {
@@ -18,10 +18,10 @@ public class HiLoGUI extends JFrame {
         lblTitle.setBounds(80, 20, 300, 30);
         add(lblTitle);
 
-        attmptLbl = new JLabel("attempts: "+attempts);
-        attmptLbl.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        attmptLbl.setBounds(155, 40, 100, 30);
-        add(attmptLbl);
+        attemptLbl = new JLabel("attempts: "+attempts);
+        attemptLbl.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        attemptLbl.setBounds(155, 40, 100, 30);
+        add(attemptLbl);
 
         guessBox = new JTextField();
         guessBox.setBounds(150, 70, 100, 30);
@@ -66,7 +66,7 @@ public class HiLoGUI extends JFrame {
             text = "enter a proper value";
         }
         resultLbl.setText(text);
-        attmptLbl.setText("attempts: "+attempts);
+        attemptLbl.setText("attempts: "+attempts);
         guessBox.requestFocus();
         guessBox.selectAll();
     }
