@@ -55,9 +55,9 @@ public class HiLoGUI extends JFrame {
             int guess = Integer.parseInt(guessText);
 
             if (guess < secret) {
-                text = guess + "? TOO LOW LOSER";
+                text = guess + "? TOO LOW";
             } else if (guess > secret) {
-                text = guess + "? TOO HIGH LOSER";
+                text = guess + "? TOO HIGH";
             } else {
                 text = guess + " is correct.";
                 newGame();
